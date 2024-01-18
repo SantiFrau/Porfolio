@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.isActive{
+    color: #fff;
+    background-color: rgba(0, 255, 0, 0.1);;
+}
+.fondo{
+
+    background-image: url('/public/fondo.jpg');
+    background-size:auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Añade estas propiedades para mejorar la calidad */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* Establece un color de fondo con opacidad */
+    background-color: rgba(255, 255, 255, 0.5); /* Color blanco con 50% de opacidad */
+    /* Opcional: Añade otros estilos de formato */
+    font-family: 'Arial', sans-serif;
+   
+}
+
+
+.fondo-cont{
+    /* Establece el contenedor con un fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.6); /* Color negro con 70% de opacidad */
+    /* Otras propiedades de estilo del contenedor */
+    
+    color: white;
+  }
+
+.fondo-cont-100{
+    background-color: rgba(0, 0, 0, 0.8); /* Color negro con 70% de opacidad */
+    /* Otras propiedades de estilo del contenedor */
+
+    color: white;
+}
+
+
+.fondo-cont-200{
+    background-color: rgba(0, 0, 0, 1); /* Color negro con 70% de opacidad */
+    /* Otras propiedades de estilo del contenedor */
+
+    color: white;
+}
+
+.blur{
+    backdrop-filter: blur(10px);
+}
