@@ -3,7 +3,7 @@ export const proyectos = [
         id:0,
         name:"Spotify Clon - PC",
         descripcion:"Clon de spotify con html, css, javascript, react, react-router, tailwind",
-        link:["https://github.com/SantiFrau/Clon_Spotify"],
+        link:["https://github.com/SantiFrau/Clon_Spotify","https://santifrau.github.io/Clon_Spotify/"],
         imagenes:[1,2,3],
         color:"bg-verde-op"
     } ,

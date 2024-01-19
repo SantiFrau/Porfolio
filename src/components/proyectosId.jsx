@@ -11,7 +11,7 @@ export default function ProyectosId() {
   };
 
   return (
-    <section className={`w-6/12 flex flex-col fondo-cont items-center justify-center gap-3 p-3 m-4 rounded-lg`}>
+    <section className={`w-full h95 p-20 flex flex-col fondo-cont items-center justify-center gap-3 p-3 m-4 rounded-lg`}>
       <div className={`p-5 ${proyectos[id].color} rounded-lg flex flex-col gap-3 items-center justify-center`}>
         <div className="w-96 rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105">
           <img onClick={handleClick} className="w-full" src={`/public/media/${id}/${src}.png`} alt="" />

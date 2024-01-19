@@ -5,7 +5,7 @@ export default function Proyectos(){
 
 
     return (
-        <section className="w-6/12 flex flex-col items-center justify-center fondo-cont gap-3 p-3 m-4 rounded-lg">
+        <section className="w-full h95 flex flex-col items-center justify-center fondo-cont gap-3 p-3 m-4 rounded-lg">
           
           <div className="grid grid-cols-2 p-3 m-5 overflow-auto">
                 {
