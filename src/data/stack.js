@@ -1,0 +1,31 @@
+export const stack = [
+    {
+        img:"html",
+        name:"HTML"
+    },
+    {
+        img:"css",
+        name:"CSS"
+    },
+    {
+        img:"js",
+        name:"JAVASCRIPT"
+    },
+    {
+        img:"react",
+        name:"REACT"
+    },
+    {
+        img:"tailwind",
+        name:"TAILWIND"
+    },
+    {
+        img:"git",
+        name:"GIT"
+    },
+    {
+        img:"github",
+        name:"GITHUB"
+    },
+
+]

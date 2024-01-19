@@ -5,7 +5,8 @@ export const proyectos = [
         descripcion:"Clon de spotify con html, css, javascript, react, react-router, tailwind",
         link:["https://github.com/SantiFrau/Clon_Spotify","https://santifrau.github.io/Clon_Spotify/"],
         imagenes:[1,2,3],
-        color:"bg-verde-op"
+        color:"bg-verde-op-100",
+        text:"text-verde-op-200"
     } ,
     {
         id:1,
@@ -13,7 +14,8 @@ export const proyectos = [
         descripcion:"Juego Tic Tac Toe con css, react, javascript" ,
         link:["https://github.com/SantiFrau/Tic_Tac_Toe"],
         imagenes:[1,2],
-        color:"bg-violeta-op"
+        color:"bg-violeta-op-100",
+        text:"text-violeta-op-200",
     },
     {
         id:2,
@@ -21,7 +23,8 @@ export const proyectos = [
         descripcion:"Calculadora hecha solo con html, css y javascript nativo" ,
         link:["https://github.com/SantiFrau/Calculadora"],
         imagenes:[1,2],
-        color:"bg-gris-op"
+        color:"bg-gris-op-100",
+        text:"text-gris-op-200",
     },
     {
         id:3,
@@ -29,6 +32,7 @@ export const proyectos = [
         descripcion:"Mini tienda online con fitrosde busqueda y carrito de compra hecha con css, react, javascript" ,
         link:["https://github.com/SantiFrau/Ecomerce"],
         imagenes:[1,2],
-        color:"bg-azul-op"
+        color:"bg-azul-op-100",
+        text:"text-azul-op-200",
     },
 ]

@@ -11,19 +11,19 @@ export default function ProyectosId() {
   };
 
   return (
-    <section className={`w-full h95 p-20 flex flex-col fondo-cont items-center justify-center gap-3 p-3 m-4 rounded-lg`}>
-      <div className={`p-5 ${proyectos[id].color} rounded-lg flex flex-col gap-3 items-center justify-center`}>
-        <div className="w-96 rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105">
-          <img onClick={handleClick} className="w-full" src={`/public/media/${id}/${src}.png`} alt="" />
+    <section className={`w-full h95 flex flex-col fondo-cont items-center justify-center gap-3 rounded-lg`}>
+      <div className={`w-4/5 p-5 ${proyectos[id].color} rounded-lg flex flex-col gap-3`}>
+        <div className="flex justify-center w-full  rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105">
+          <img onClick={handleClick} className=" rounded-lg w-96" src={`/public/media/${id}/${src}.png`} alt="" />
         </div>
 
-        <div>
-          <h3 className="text-lg font-bold text-white">{proyectos[id].name}</h3>
-          <p className="text-zinc-300">{proyectos[id].descripcion}</p>
-          <ul>
+        <div className={`flex flex-col gap-3 justify-start ${proyectos[id].text}`}>
+          <h3 className=" text-lg font-bold text-white">{proyectos[id].name}</h3>
+          <p className="">{proyectos[id].descripcion}</p>
+          <ul className="">
             {proyectos[id].link.map((d, i) => (
-              <li key={i}>
-                <a className="" href={d} target="_blank" rel="noreferrer">
+              <li className="" key={i}>
+                <a className="hover:underline" href={d} target="_blank" rel="noreferrer">
                   {d}
                 </a>
               </li>

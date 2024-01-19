@@ -47,36 +47,34 @@
     color: white;
 }
 
-.blur{
-    backdrop-filter: blur(10px);
+.page-enter {
+  transform: scale(0.5);
+  opacity: 0;
 }
 
-.page-enter {
-    scale: 0.5;
-    opacity: 0.4;
-   
-  }
-  
-  .page-enter-active {
-    
-    scale: 1;
-    opacity: 1;
-    transition: scale 300ms ease-in-out , opacity 400ms ease-in-out;
-    
-  }
-  
-  .page-exit {
-    scale: 1;
-    opacity: 1;
-  }
-  
-  .page-exit-active {
-    scale: 0.5;
-    opacity: 0.4;
-    transition: scale 300ms ease-in-out, opacity 400ms ease-in-out;
-   
-  }
+.page-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.page-exit {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.page-exit-active {
+  transform: scale(0.5);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 400ms ease-in-out;
+}
 
   .h95{
     height: 95vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    .h95 {
+      height: max-content
+    }
   }
