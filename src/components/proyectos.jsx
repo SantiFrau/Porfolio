@@ -7,7 +7,7 @@ export default function Proyectos(){
     return (
         <section className="w-full h95 flex flex-col items-center justify-center fondo-cont gap-3 rounded-lg">
           
-          <div className="grid grid-cols-2 p-3 m-5 overflow-auto">
+          <div className="grid sm:grid-cols-2 grid-cols-1 p-3 m-5 overflow-auto">
                 {
                     proyectos.map((d)=>{
                         return (

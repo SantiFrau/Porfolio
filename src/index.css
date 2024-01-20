@@ -20,6 +20,7 @@
     background-color: rgba(255, 255, 255, 0.5); /* Color blanco con 50% de opacidad */
     /* Opcional: Añade otros estilos de formato */
     font-family: 'Arial', sans-serif;
+    
    
 }
 
@@ -73,8 +74,14 @@
     height: 95vh;
   }
 
+
   @media screen and (max-width: 768px) {
     .h95 {
       height: max-content
     }
+    .fondo-cont-200{
+      background-color:  rgba(0, 0, 0, 0.8);
+    }
+ 
+  
   }

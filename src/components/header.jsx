@@ -4,10 +4,11 @@ export default function Header(){
 
 
     return(
-        <header className="w-full h-full gap-7 flex flex-row flex-col items-center justify-center fondo-cont-200 rounded-lg">
+        <header className="w-full h-full gap-3 flex flex-row flex-col items-center justify-center fondo-cont-200 rounded-lg">
             
-             <img className="md:w-32 w-16 rounded-full" src="https://imgs.search.brave.com/daq6W-1E3byUT6xxra3KAwC2JiWCQmlrv5S62kmrZ3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c29mdHpvbmUuZXMv/YXBwL3VwbG9hZHMv/MjAxOC8wNC9ndWVz/dC5wbmc" alt="" />
-               
+            <div className="md:p-0 p-5">
+             <img className="md:w-32 w-24 rounded-full" src="https://imgs.search.brave.com/daq6W-1E3byUT6xxra3KAwC2JiWCQmlrv5S62kmrZ3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/c29mdHpvbmUuZXMv/YXBwL3VwbG9hZHMv/MjAxOC8wNC9ndWVz/dC5wbmc" alt="" />
+             </div>
              <div className="flex gap-20">
                <div className="relative bottom-8 hover:bg-zinc-600 p-1 rounded-full">
                 <a href="https://github.com/SantiFrau" target='_blank' rel="noreferrer">
@@ -15,7 +16,7 @@ export default function Header(){
                 </a>
                </div>
                 <div className="relative bottom-8 hover:bg-zinc-600 p-1 rounded-full">
-                  <a href="" target='_blank' rel="noreferrer"> 
+                  <a href="https://www.instagram.com/santi_frau_/" target='_blank' rel="noreferrer"> 
                    <img className='w-8 rounded-full' src="/public/icons/ig.png" alt="icono de instagram" />
                   
                   </a>
@@ -26,7 +27,7 @@ export default function Header(){
                 Santiago Frau
              </h1>
             
-             <h2 className="text-zinc-300 px-3">
+             <h2 className="text-zinc-300 p-3">
                Desarrollador web Frontend
              </h2>
         </header>
