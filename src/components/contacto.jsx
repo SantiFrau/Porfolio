@@ -1,29 +1,49 @@
+import { useState } from "react";
+
 export default function Contacto (){
 
     
     const ContactButton = () => {
         const email = "santiagofrau3@gmail.com";
-        
+        const [subject,setSubject] = useState("")
+        const [msj,setMsj] = useState("")
       
-        const mailtoLink = `mailto:${email}`;
+        const mailtoLink = `mailto:${email}?subject=Mensaje de ${subject}&body=${msj}`;
+
         const ig = "https://www.instagram.com/santi_frau_/"
-                //mailto:santiagofrau3@gmail.com?subject=Hola&body=mensaje
+        
+        
 
 
         return (<>
-           <div className="flex-wrap w-full px-12 flex flex-row justify-start gap-5 items-end">
-            <p>
-             <p className="font-bold text-lg ">Instagram :</p>
-              <a href={ig}>{ig}</a>
-             </p>
+         <form action="#" className="flex flex-col items-center justify-center gap-3">
+          <input type="email" id="email" value={subject} 
+          placeholder="Email"
+           onChange={(e)=>{setSubject(e.target.value)}}
+           className="fondo-cont-100 rounded-xl w-full p-3" /> 
+
+          <textarea name=""  cols="30" rows="10" 
+          value={msj}
+          onChange={(e)=>{setMsj(e.target.value)}}
+          placeholder="Mensaje"
+          className="fondo-cont-100 rounded-xl w-full p-3"
+          ></textarea>
+         </form>
+         <div className="w-full flex justify-center items-center">
+
+           <a className="bg-black p-3 rounded-full hover:text-zinc-500 hover:bg-zinc-800" href={mailtoLink} target="_blank" rel="noopener noreferrer">
+              Contactar por gmail
+            </a>
+            </div>
+
+           <div className="flex-wrap w-full px-12 flex flex-row justify-between gap-5 items-end">
+           <p><p className="font-bold text-lg">Email :</p> santiagofrau3@gmail.com</p>
+    
+              <a className="font-bold text-lg hover:text-zinc-600" href={ig}>Instagram</a>
              
            </div>
-        <div className="flex-wrap w-full px-12 flex flex-row justify-between gap-5 items-end">
-           <p><p className="font-bold text-lg">Email :</p> santiagofrau3@gmail.com</p>
-           <a className="bg-black p-3 rounded-full hover:text-zinc-500 hover:bg-zinc-800" href={mailtoLink} target="_blank" rel="noopener noreferrer">
-            Contactar por gmail
-           </a>
-           </div>
+
+        
           
            </>
         );

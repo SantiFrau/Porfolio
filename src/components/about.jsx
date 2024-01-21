@@ -4,14 +4,14 @@ import { useEffect } from "react"
 
 function ColoredText() {
     useEffect(() => {
-      const paragraph = document.getElementById("coloredParagraph");
-      if (paragraph) {
-        const words = paragraph.innerText.split(" ");
+      const p = document.getElementById("p");
+      if (p) {
+        const words = p.innerText.split(" ");
         const coloredWords = words.map((word) => {
           const randomColorClass = getRandomColorClass();
           return `<span class="${randomColorClass}">${word}</span>`;
         });
-        paragraph.innerHTML = coloredWords.join(" ");
+        p.innerHTML = coloredWords.join(" ");
       }
     }, []);
   
@@ -23,8 +23,8 @@ function ColoredText() {
     };
   
     return (
-      <p id="coloredParagraph" className="font-mono p-3 mx-5">
-        ¡Hola! Soy Santiago Frau, un apasionado desarrollador web frontend con base en Argentina.
+      <p id="p" className="font-mono p-3 mx-5">
+        ¡Hola! Soy Santiago Frau, un apasionado desarrollador web frontend de Argentina.
         Obtuve experiencia en diversos proyectos personales. Mi fascinación por la tecnología me
         impulsa a mantenerme constantemente actualizado con las últimas tendencias y herramientas en
         el mundo del desarrollo web.
@@ -41,11 +41,12 @@ function ColoredText() {
 
 export default function About () {
     return (
-        <section className="w-full h95 flex flex-col items-center justify-center fondo-cont gap-3 rounded-lg">
+        <section className=" overflow-auto w-full h95 flex flex-col items-center justify-center fondo-cont gap-3 rounded-lg">
           
          <h3 className="font-bold text-2xl w-full text-start px-5 py-2">Sobre mi</h3>
+         <div className="overflow-auto">
          <ColoredText></ColoredText>
-         
+         </div>
          <h5 className="font-bold text-xl w-full text-start px-5 py-2">Stack de tecnologias</h5>
          <div className="flex flex-row gap-3 items-end justify-center p-3 flex-wrap">
           {
