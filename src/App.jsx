@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes} from "react-router-dom";
+import { NavLink, Navigate, Route, Routes} from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Header from "./components/header";
 import Proyectos from "./components/proyectos";
@@ -43,6 +43,7 @@ function App() {
               <Route  path="/Portafolios/proyectos" element={<Proyectos />} />
               <Route  path="/Portafolios/proyectos/:id" element={<ProyectosId />} />
               <Route  path="/Portafolios/contacto" element={<Contacto></Contacto>} />
+              <Route path="*" element={<Navigate to={"/Portafolios/"}></Navigate>}></Route>
             </Routes>
           </CSSTransition>
         </TransitionGroup>
