@@ -1,3 +1,4 @@
+import { NoEncryption } from "@mui/icons-material";
 import { useState } from "react";
 
 export default function Contacto (){
@@ -13,7 +14,7 @@ export default function Contacto (){
         const ig = "https://www.instagram.com/santi_frau_/"
         
         
-
+      
 
         return (<>
          <form action="#" className="flex flex-col items-center justify-center gap-3">
@@ -21,8 +22,9 @@ export default function Contacto (){
           placeholder="Email"
            onChange={(e)=>{setSubject(e.target.value)}}
            className="fondo-cont-100 rounded-xl w-full p-3" /> 
-
-          <textarea name=""  cols="30" rows="10" 
+         
+          <textarea name=""  cols={30} rows={8}
+          style={{resize:"none"}}
           value={msj}
           onChange={(e)=>{setMsj(e.target.value)}}
           placeholder="Mensaje"
@@ -36,7 +38,7 @@ export default function Contacto (){
             </a>
             </div>
 
-           <div className="flex-wrap w-full px-12 flex flex-row justify-between gap-5 items-end">
+           <div className="md:flex-nowrap flex-wrap w-full px-12 flex flex-row justify-between gap-2 items-end">
            <p><p className="font-bold text-lg">Email :</p> santiagofrau3@gmail.com</p>
     
               <a className="font-bold text-lg hover:text-zinc-600" href={ig}>Instagram</a>

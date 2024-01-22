@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { proyectos } from "../data/proyectos";
 
@@ -10,12 +10,32 @@ export default function ProyectosId() {
     setSrc((prevSrc) => (prevSrc === 2 ? 1 : 2));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSrc((prevSrc) => (prevSrc === 2 ? 1 : 2));
+    }, 3000);
+
+    return () => {
+      // Limpiar el intervalo al desmontar el componente
+      clearInterval(interval);
+    };
+  }, []);
+
+  const Image =()=>{
+    //se creamos un componente react se vuelve a cargar las clases y la nimacion se resetea y se ejecuta
+    //cada vez que cambia la src si estuviera dentro del componente prinsipal no lo hace solo cambia la src
+    return(
+     <div className="flex justify-center w-full  rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105">
+          <img onClick={handleClick} className="animation-1 rounded-lg w-96" src={`/Portafolios/public/media/${id}/${src}.png`} alt="" />
+        </div>
+    )
+  }
+
   return (
     <section className={` w-full h95 flex flex-col fondo-cont items-center justify-center gap-3 rounded-lg`}>
       <div className={`w-4/5 p-5 ${proyectos[id].color2} rounded-lg flex flex-col gap-3 my-5`}>
-        <div className="flex justify-center w-full  rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform hover:scale-105">
-          <img onClick={handleClick} className=" rounded-lg w-96" src={`/Portafolios/public/media/${id}/${src}.png`} alt="" />
-        </div>
+         
+         <Image></Image>
 
         <div className={`flex flex-col gap-3 justify-start ${"text-zinc-400"}`}>
           <h3 className=" text-lg font-bold text-white">{proyectos[id].name}</h3>
