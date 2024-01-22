@@ -1,4 +1,4 @@
-import { NavLink, Navigate, Route, Routes} from "react-router-dom";
+import { NavLink, Route, Routes} from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Header from "./components/header";
 import Proyectos from "./components/proyectos";

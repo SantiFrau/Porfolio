@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { proyectos } from "../data/proyectos";
 
 export default function Proyectos(){
-
-
+       
+  
+    
     return (
         <section className="w-full h95 flex flex-col items-center justify-center fondo-cont gap-3 rounded-lg">
           
