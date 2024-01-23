@@ -1,4 +1,4 @@
-import { NoEncryption } from "@mui/icons-material";
+
 import { useState } from "react";
 
 export default function Contacto (){
