@@ -17,7 +17,7 @@ export default function Header(){
                </div>
 
                <div className="flex items-center justify-center relative hover:bg-zinc-600 p-1 rounded-full">
-                <a href="https://www.linkedin.com/in/santiago-frau-4831472b0/" target='_blank' rel="noreferrer">
+                <a href="https://www.linkedin.com/in/santiago-frau/" target='_blank' rel="noreferrer">
                   <div className="w-8 rounded-full flex items-center justify-center">
                   <LinkedInIcon style={{color:"#0077B5" , fontSize:30}}></LinkedInIcon>
                   </div>
