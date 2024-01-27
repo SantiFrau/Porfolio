@@ -41,7 +41,7 @@ export default function Contacto (){
            <div className="md:flex-nowrap flex-wrap w-full px-12 flex flex-row justify-between gap-2 items-end">
            <p><p className="font-bold text-lg">Email :</p> santiagofrau3@gmail.com</p>
     
-              <a className="font-bold text-lg hover:text-zinc-600" href={ig}>Instagram</a>
+              <a className="font-bold text-lg hover:text-zinc-600" href="#">Instagram</a>
              
            </div>
 
