@@ -32,7 +32,7 @@ export const proyectos = [
     {
         id:3,
         name:"Ecomerce - Responsive",
-        descripcion:"Mini tienda online con fitrosde busqueda y carrito de compra hecha con css, react, javascript" ,
+        descripcion:"Mini tienda online con filtros de busqueda y carrito de compra hecha con css, react, javascript" ,
         link:[{link:"https://github.com/SantiFrau/Ecomerce",name:"Github"},{link:"https://santifrau.github.io/Ecomerce/",name:"Sitio"}],
         imagenes:[1,2],
         color:"bg-azul-op-100",
