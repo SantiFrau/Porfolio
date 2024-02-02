@@ -39,4 +39,14 @@ export const proyectos = [
         text:"text-azul-op-200",
         color2:"bg-azul-op-300"
     },
+    {
+        id:4,
+        name:"Task manager - Responsive",
+        descripcion:"Administrador de tareas con registros de usuarios donde se pueden crear , modificar y eliminar tareas por cada ususario .Hecho con next.js , tailwind , prisma" ,
+        link:[{link:"https://github.com/SantiFrau/Administrador-de-tareas-Desplegado-",name:"Github"},{link:"https://administrador-de-tareas-6i06s5v1l-santiago-fraus-projects.vercel.app/",name:"Sitio"}],
+        imagenes:[1,2],
+        color:"bg-sky-op-100",
+        text:"text-sky-op-200",
+        color2:"bg-sky-op-300"
+    },
 ]

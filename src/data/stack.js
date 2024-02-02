@@ -1,30 +1,38 @@
 export const stack = [
     {
-        img:"html",
+        img:"html.png",
         name:"HTML"
     },
     {
-        img:"css",
+        img:"css.png",
         name:"CSS"
     },
     {
-        img:"js",
+        img:"js.png",
         name:"JAVASCRIPT"
     },
     {
-        img:"react",
+        img:"react.png",
         name:"REACT"
     },
     {
-        img:"tailwind",
+        img:"tailwind.png",
         name:"TAILWIND"
     },
     {
-        img:"git",
+         img:"astro.svg",
+         name:"ASTRO"
+    },
+    {
+        img:"next.png",
+        name:"NEXTjs"
+    },
+    {
+        img:"git.png",
         name:"GIT"
     },
     {
-        img:"github",
+        img:"github.png",
         name:"GITHUB"
     },
 

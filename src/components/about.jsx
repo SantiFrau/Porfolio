@@ -60,7 +60,7 @@ export default function About () {
                 return(
             
                     <div className={`flex flex-col items-center justify-center ${gap} `} key={i}>
-                        <img className="w-10" src={`/Portafolios/public/icons/${d.img}.png`} alt={`icon ${d.name}`}></img>
+                        <img className="w-10" src={`/Portafolios/public/icons/${d.img}`} alt={`icon ${d.name}`}></img>
                         <p>{d.name}</p>
                     </div>
                 )
