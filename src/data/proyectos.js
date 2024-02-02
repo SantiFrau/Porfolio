@@ -49,4 +49,14 @@ export const proyectos = [
         text:"text-sky-op-200",
         color2:"bg-sky-op-300"
     },
+    {
+        id:5,
+        name:"Porfolio 2 - Responsive",
+        descripcion:"Porfolio creado con astro , tailwind y react" ,
+        link:[{link:"https://github.com/SantiFrau/Porfolio2",name:"Github"},{link:"https://santifrau.github.io/Porfolio2/",name:"Sitio"}],
+        imagenes:[1,2],
+        color:"bg-violeta-op-100",
+        text:"text-violeta-op-200",
+        color2:"bg-violeta-op-300"
+    },
 ]
