@@ -20,14 +20,25 @@ export const proyectos = [
         color2:"bg-violeta-op-300"
     },
     {
-        id:2,
-        name:"Calculadora - Responsive",
-        descripcion:"Calculadora hecha solo con html, css y javascript nativo" ,
-        link:[{link:"https://github.com/SantiFrau/Calculadora",name:"Github"},{link:"https://santifrau.github.io/Calculadora/",name:"Sitio"}],
+        id:4,
+        name:"Task manager - Responsive",
+        descripcion:"Administrador de tareas con registros de usuarios donde se pueden crear , modificar y eliminar tareas por cada ususario .Hecho con next.js , tailwind , prisma" ,
+        link:[{link:"https://github.com/SantiFrau/Administrador-de-tareas-Desplegado-",name:"Github"},{link:"https://administrador-de-tareas-6i06s5v1l-santiago-fraus-projects.vercel.app/",name:"Sitio"}],
         imagenes:[1,2],
-        color:"bg-gris-op-100",
-        text:"text-gris-op-200",
-        color2:"bg-gris-op-300"
+        color:"bg-sky-op-100",
+        text:"text-sky-op-200",
+        color2:"bg-sky-op-300"
+    },
+
+    {
+        id:6,
+        name:"Preguntados - Responsive",
+        descripcion:"Juego basado en preguntados con una tematica de programacion. Hecho con react, tailwind, css y js" ,
+        link:[{link:"https://github.com/SantiFrau/Preguntados",name:"Github"},{link:"https://santifrau.github.io/Preguntados/",name:"Sitio"}],
+        imagenes:[1,2,3],
+        color:"bg-negro-op-100",
+        text:"text-negro-op-200",
+        color2:"bg-negro-op-300"
     },
     {
         id:3,
@@ -39,15 +50,16 @@ export const proyectos = [
         text:"text-azul-op-200",
         color2:"bg-azul-op-300"
     },
+   
     {
-        id:4,
-        name:"Task manager - Responsive",
-        descripcion:"Administrador de tareas con registros de usuarios donde se pueden crear , modificar y eliminar tareas por cada ususario .Hecho con next.js , tailwind , prisma" ,
-        link:[{link:"https://github.com/SantiFrau/Administrador-de-tareas-Desplegado-",name:"Github"},{link:"https://administrador-de-tareas-6i06s5v1l-santiago-fraus-projects.vercel.app/",name:"Sitio"}],
+        id:2,
+        name:"Calculadora - Responsive",
+        descripcion:"Calculadora hecha solo con html, css y javascript nativo" ,
+        link:[{link:"https://github.com/SantiFrau/Calculadora",name:"Github"},{link:"https://santifrau.github.io/Calculadora/",name:"Sitio"}],
         imagenes:[1,2],
-        color:"bg-sky-op-100",
-        text:"text-sky-op-200",
-        color2:"bg-sky-op-300"
+        color:"bg-gris-op-100",
+        text:"text-gris-op-200",
+        color2:"bg-gris-op-300"
     },
     {
         id:5,
@@ -59,4 +71,6 @@ export const proyectos = [
         text:"text-violeta-op-200",
         color2:"bg-violeta-op-300"
     },
+    
+   
 ]
