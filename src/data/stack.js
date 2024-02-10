@@ -1,22 +1,22 @@
 export const stack = [
     {
-        img:"html.png",
+        img:"html.webp",
         name:"HTML"
     },
     {
-        img:"css.png",
+        img:"css.webp",
         name:"CSS"
     },
     {
-        img:"js.png",
+        img:"js.webp",
         name:"JAVASCRIPT"
     },
     {
-        img:"react.png",
+        img:"react.webp",
         name:"REACT"
     },
     {
-        img:"tailwind.png",
+        img:"tailwind.webp",
         name:"TAILWIND"
     },
     {
@@ -24,15 +24,15 @@ export const stack = [
          name:"ASTRO"
     },
     {
-        img:"next.png",
+        img:"next.webp",
         name:"NEXTjs"
     },
     {
-        img:"git.png",
+        img:"git.webp",
         name:"GIT"
     },
     {
-        img:"github.png",
+        img:"github.webp",
         name:"GITHUB"
     },
 
