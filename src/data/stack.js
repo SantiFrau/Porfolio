@@ -1,35 +1,43 @@
 export const stack = [
     {
         img:"html.webp",
-        name:"HTML"
+        name:"HTML",
+        color:"bg-orange-600"
     },
     {
         img:"css.webp",
-        name:"CSS"
+        name:"CSS",
+        color:"bg-blue-600"
     },
     {
         img:"js.webp",
-        name:"JAVASCRIPT"
+        name:"JAVASCRIPT",
+        color:"bg-yellow-600"
     },
     {
         img:"react.webp",
-        name:"REACT"
+        name:"REACT",
+        color:"bg-sky-700"
     },
     {
         img:"tailwind.webp",
-        name:"TAILWIND"
+        name:"TAILWIND",
+        color:"bg-sky-400"
     },
     {
          img:"astro.svg",
-         name:"ASTRO"
+         name:"ASTRO",
+         color:"bg-gray-500"
     },
     {
         img:"next.webp",
-        name:"NEXTjs"
+        name:"NEXTjs",
+        color:"bg-zinc-700"
     },
     {
         img:"git.webp",
-        name:"GIT"
+        name:"GIT",
+       
     },
     {
         img:"github.webp",
