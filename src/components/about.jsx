@@ -1,19 +1,24 @@
 import {stack} from "../data/stack.js"
-import { useEffect } from "react"
+import { Suspense, useEffect } from "react"
 
 
 function ColoredText() {
-    useEffect(() => {
-      const p = document.getElementById("p");
-      if (p) {
-        const words = p.innerText.split(" ");
-        const coloredWords = words.map((word) => {
-          const randomColorClass = getRandomColorClass();
-          return `<span class="${randomColorClass}">${word}</span>`;
-        });
-        p.innerHTML = coloredWords.join(" ");
-      }
-    }, []);
+  
+  useEffect(() => {
+    applyRandomColors();
+  }, []);
+
+  const applyRandomColors = () => {
+    const p = document.getElementById("p");
+    if (p) {
+      const words = p.innerText.split(" ");
+      const coloredWords = words.map((word) => {
+        const randomColorClass = getRandomColorClass();
+        return `<span class="${randomColorClass}">${word}</span>`;
+      });
+      p.innerHTML = coloredWords.join(" ");
+    }
+  };
   
     const getRandomColorClass = () => {
       
@@ -48,8 +53,10 @@ export default function About () {
          <ColoredText></ColoredText>
          </div>
          <h5 className="font-bold text-xl w-full text-start px-5 py-2">Stack de tecnologias</h5>
+         <Suspense fallback={<div>Cargando...</div>}>
          <div className="flex flex-row gap-3 items-end justify-center p-3 flex-wrap">
-          {
+          
+            {
             stack.map((d,i)=>{
                 let gap
                 if(d.img == "tailwind"){
@@ -67,6 +74,7 @@ export default function About () {
             })
           }
          </div>
+         </Suspense>
         
 
         </section>

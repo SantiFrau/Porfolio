@@ -1,4 +1,4 @@
-import { useState , useEffect } from "react";
+import { useState , useEffect, Suspense } from "react";
 import { useParams } from "react-router-dom";
 import { proyectos } from "../data/proyectos";
 import {stack} from "../data/stack.js"
@@ -24,7 +24,7 @@ export default function ProyectosId() {
     //cada vez que cambia la src si estuviera dentro del componente prinsipal no lo hace solo cambia la src
     return(
      <div onClick={()=>{setImagen(true)}} className={`w-full ${imagen ? "hidden" : undefined}  flex justify-center items-center hover:scale-125  rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform p-3`}>
-          <img className={`${imagen ? "w-96" : undefined } animation-1 rounded-lg w-72`} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
+          <img className={` animation-1 rounded-lg w-72`} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
         </div>
     )
   }
@@ -33,7 +33,7 @@ export default function ProyectosId() {
     
     return(
      <div className={`flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out transform p-3`}>
-          <img className={`${imagen ? "w-3/4" : undefined } animation-1 rounded-lg w-72`} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
+          <img className={`${imagen ? "w-2/3" : undefined } animation-1 rounded-lg w-72`} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
         </div>
     )
   }
@@ -50,9 +50,11 @@ export default function ProyectosId() {
       : undefined
     }
     <section className={`w-full h95 flex flex-col fondo-cont items-center justify-center gap-3 rounded-lg`}>
+      <Suspense fallback={<div>Cargando...</div>}>
       <div className={`w-4/5 p-5 h-full ${proyectos[id].color2} rounded-lg flex flex-col items-center justify-center gap-3 my-5`}>
-         
+      <Suspense fallback={<div>Cargando...</div>}>  
          <Image></Image>
+         </Suspense> 
 
         <div className={`flex flex-col gap-3 justify-start ${"text-zinc-400"} overflow-auto`}>
           <h3 className=" text-lg font-bold text-white">{proyectos[id].name}</h3>
@@ -74,7 +76,7 @@ export default function ProyectosId() {
           <ul className="font-mono flex flex-row justify-between py-5">
             {proyectos[id].link.map((d, i) => (
               <li className="text-warp" key={i}>
-                <a className="hover:underline hover:text-white hover:border-white border border-black rounded-full p-3" href={d.link} target="_blank" rel="noreferrer">
+                <a className="hover:underline hover:text-white hover:border-white border border-black rounded-xl px-5 p-3 " href={d.link} target="_blank" rel="noreferrer">
                   {d.name}
                 </a>
               </li>
@@ -82,6 +84,7 @@ export default function ProyectosId() {
           </ul>
         </div>
       </div>
+      </Suspense>
     </section>
   </>);
 }
