@@ -1,5 +1,5 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-const ig = "https://www.instagram.com/santi_frau_/"
+const ig = "https://www.instagram.com/ssanti.dev/"
 
 export default function Header(){
 
@@ -26,7 +26,7 @@ export default function Header(){
                </div>
 
                 <div className="relative bottom-7 hover:bg-zinc-600 p-1 rounded-full">
-                  <a href="" target='_blank' rel="noreferrer"> 
+                  <a href={ig} target='_blank' rel="noreferrer"> 
                    <img className='w-8 rounded-full' src="/Portafolios/public/icons/ig.webp" alt="icono de instagram" />
                   
                   </a>

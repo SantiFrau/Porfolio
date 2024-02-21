@@ -32,8 +32,8 @@ export default function ProyectosId() {
   const Image2 =()=>{
     
     return(
-     <div className={`flex justify-center items-center rounded-lg transition-transform duration-300 ease-in-out transform p-3`}>
-          <img className={`${imagen ? "w-2/3" : undefined } animation-1 rounded-lg w-72`} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
+     <div className={`flex justify-center w-2/3 items-center rounded-lg transition-transform duration-300 ease-in-out transform p-3`}>
+          <img className={`w-full animation-1 rounded-lg `} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
         </div>
     )
   }
