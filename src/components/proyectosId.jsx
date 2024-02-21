@@ -66,7 +66,7 @@ export default function ProyectosId() {
                   return(
                     <div key={id+200} className={`flex flex-row gap-1 ${stack[tec].color} bg-opacity-40 rounded-lg p-2`}>
                        <p className="text-sm text-zinc-300">{stack[tec].name}</p> 
-                       <img className="w-5" src={`/Portafolios/public/icons/${stack[tec].img}`} alt="" />              
+                       <img className="w-5" src={`/Portafolios/public/icons/${stack[tec].img}`} alt="" />             
                     </div>
                   )
                })
