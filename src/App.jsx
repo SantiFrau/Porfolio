@@ -7,6 +7,8 @@ import "./index.css"; // Importa el archivo de estilos CSS
 import { useLocation } from "react-router-dom";
 import About from "./components/about";
 import Contacto from "./components/contacto";
+import { Navigate } from "react-router-dom";
+
 function App() {
     //usar location es dinamico no como el objeto history.path
     //cada vez que cambia location se hace la transision
@@ -43,6 +45,8 @@ function App() {
               <Route  path="/Portafolios/proyectos" element={<Proyectos />} />
               <Route  path="/Portafolios/proyectos/:id" element={<ProyectosId />} />
               <Route  path="/Portafolios/contacto" element={<Contacto></Contacto>} />
+              <Route  path="/*" element={ <Navigate to="/Portafolios/"  />} />
+              
             </Routes>
           </CSSTransition>
         </TransitionGroup>
