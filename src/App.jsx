@@ -13,12 +13,12 @@ function App() {
     //usar location es dinamico no como el objeto history.path
     //cada vez que cambia location se hace la transision
     const location  = useLocation()
- 
+    
   return (
 
     
   
-    <div className={`w-full p-3 ${location.key === 'default' ? 'h-screen' : 'h-full'} md:h-screen flex flex-col md:flex-row fondo gap-5 items-center justify-center`}>
+    <div className={`w-full p-3 min-h-screen max-h-full md:h-screen flex flex-col md:flex-row fondo gap-5 items-center justify-center`}>
         <div className="md:w-3/12 h95 w-full">
         <Header />
         </div>
