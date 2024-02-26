@@ -8,7 +8,6 @@ import { useLocation } from "react-router-dom";
 import About from "./components/about";
 import Contacto from "./components/contacto";
 
-
 function App() {
     //usar location es dinamico no como el objeto history.path
     //cada vez que cambia location se hace la transision
