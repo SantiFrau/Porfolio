@@ -1,5 +1,5 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-const ig = "https://www.instagram.com/ssanti.dev/"
+const ig = "https://www.instagram.com/santi.prog/"
 
 export default function Header(){
 
