@@ -24,7 +24,7 @@ export default function ProyectosId() {
     //cada vez que cambia la src si estuviera dentro del componente prinsipal no lo hace solo cambia la src
     return(
      <div onClick={()=>{setImagen(true)}} className={`w-full ${imagen ? "hidden" : undefined}  flex justify-center items-center hover:scale-125  rounded-lg overflow-hidden transition-transform duration-300 ease-in-out transform p-3`}>
-          <img className={` animation-1 rounded-lg w-72`} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
+          <img className={` animation-1 rounded-lg w-72`} src={`/Porfolio/public/media/${id}/${src}.webp`} alt="" />
         </div>
     )
   }
@@ -33,7 +33,7 @@ export default function ProyectosId() {
     
     return(
      <div className={`flex justify-center w-2/3 items-center rounded-lg transition-transform duration-300 ease-in-out transform p-3`}>
-          <img className={`w-full animation-1 rounded-lg `} src={`/Portafolios/public/media/${id}/${src}.webp`} alt="" />
+          <img className={`w-full animation-1 rounded-lg `} src={`/Porfolio/public/media/${id}/${src}.webp`} alt="" />
         </div>
     )
   }
@@ -66,7 +66,7 @@ export default function ProyectosId() {
                   return(
                     <div key={id+200} className={`flex flex-row gap-1 ${stack[tec].color} bg-opacity-40 rounded-lg p-2`}>
                        <p className="text-sm text-zinc-300">{stack[tec].name}</p> 
-                       <img className="w-5" src={`/Portafolios/public/icons/${stack[tec].img}`} alt="" />             
+                       <img className="w-5" src={`/Porfolio/public/icons/${stack[tec].img}`} alt="" />             
                     </div>
                   )
                })
