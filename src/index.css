@@ -71,6 +71,10 @@
     color: white;
 }
 
+.shadow-y{
+  text-shadow: 5px 0px 5px #f7bb16;
+}
+
 .page-enter {
   transform: scale(0.5);
   opacity: 0;
@@ -121,6 +125,52 @@
     .fondo-cont-200{
       background-color:  rgba(0, 0, 0, 0.8);
     }
- 
+     
   
+  }
+
+
+  @keyframes typing {
+   0% { width: 9% }
+   
+    100% { width: 82% }
+  }
+
+  
+  @keyframes titilar {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+
+  .text-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding:1px;
+   
+  }
+
+  .text{
+    margin: auto;
+    letter-spacing: 1px;
+    display: inline-block;
+    animation: typing 1.5s steps(10)  ; /* Duración de la animación y cantidad de pasos */
+    text-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 3px;
+  }
+
+  .text::before{
+    content: "";
+    width: 1.5px;
+    height: 80%;
+    position: absolute;
+    background-color: #aaa;
+    right: 0;
+    animation: titilar .6s alternate infinite;
+    
   }

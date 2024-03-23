@@ -18,26 +18,26 @@ function App() {
 
     
   
-    <div className={`w-full p-3 min-h-screen max-h-full md:h-screen flex flex-col md:flex-row fondo gap-5 items-center justify-center`}>
-        <div className="md:w-3/12 h95 w-full">
+    <div className={`w-full p-3 min-h-screen max-h-full lg:h-screen flex flex-col lg:flex-row fondo gap-5 items-center justify-center`}>
+        <div className="lg:w-3/12 h95 w-full">
         <Header />
         </div>
 
-        <nav className="fondo-cont-100 w-full md:w-1/6 h95 flex flex-col items-center justify-center rounded-lg">
+        <nav className="fondo-cont-100 w-full lg:w-1/6 h95 flex flex-col items-center justify-center rounded-lg">
           <ul className="w-full flex flex-row justify-around	 md:flex-col text-zinc-400">
             <NavLink to="/Portafolios/sobre-mi" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
-              <li className="text-center px-5 md:px-0 py-3">Sobre mi</li>
+              <li className="text-center px-5 lg:px-0 py-3">Sobre mi</li>
             </NavLink>
             <NavLink to="/Portafolios/proyectos" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
-              <li className="text-center px-5 md:px-0 py-3">Proyectos</li>
+              <li className="text-center px-5 lg:px-0 py-3">Proyectos</li>
             </NavLink>
             <NavLink to="/Portafolios/contacto" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
-              <li className="text-center px-5 md:px-0 py-3">Contacto</li>
+              <li className="text-center px-5 lg:px-0 py-3">Contacto</li>
             </NavLink>
           </ul>
         </nav>
          
-         <div className="md:w-6/12 h95 w-full">
+         <div className="lg:w-6/12 h95 w-full">
         <TransitionGroup>
           <CSSTransition key={location.key} classNames="page" timeout={300} mountOnEnter unmountOnExit >
             <Routes>
