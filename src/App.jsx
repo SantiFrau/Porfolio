@@ -25,13 +25,13 @@ function App() {
 
         <nav className="fondo-cont-100 w-full lg:w-1/6 h95 flex flex-col items-center justify-center rounded-lg">
           <ul className="w-full flex flex-row justify-around	 md:flex-col text-zinc-400">
-            <NavLink to="/Portafolios/sobre-mi" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
+            <NavLink to="/Portafolio/sobre-mi" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
               <li className="text-center px-5 lg:px-0 py-3">Sobre mi</li>
             </NavLink>
-            <NavLink to="/Portafolios/proyectos" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
+            <NavLink to="/Portafolio/proyectos" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
               <li className="text-center px-5 lg:px-0 py-3">Proyectos</li>
             </NavLink>
-            <NavLink to="/Portafolios/contacto" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
+            <NavLink to="/Portafolio/contacto" className={({ isActive }) => isActive ? "isActive rounded-lg" : undefined}>
               <li className="text-center px-5 lg:px-0 py-3">Contacto</li>
             </NavLink>
           </ul>
@@ -41,10 +41,10 @@ function App() {
         <TransitionGroup>
           <CSSTransition key={location.key} classNames="page" timeout={300} mountOnEnter unmountOnExit >
             <Routes>
-              <Route  path="/Portafolios/sobre-mi" element={<About></About>} />
-              <Route  path="/Portafolios/proyectos" element={<Proyectos />} />
-              <Route  path="/Portafolios/proyectos/:id" element={<ProyectosId />} />
-              <Route  path="/Portafolios/contacto" element={<Contacto></Contacto>} />
+              <Route  path="/Portafolio/sobre-mi" element={<About></About>} />
+              <Route  path="/Portafolio/proyectos" element={<Proyectos />} />
+              <Route  path="/Portafolio/proyectos/:id" element={<ProyectosId />} />
+              <Route  path="/Portafolio/contacto" element={<Contacto></Contacto>} />
             
             </Routes>
           </CSSTransition>
