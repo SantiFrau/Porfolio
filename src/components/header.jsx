@@ -28,12 +28,12 @@ export default function Header(){
         <header className="w-full h-full gap-3 flex flex-row flex-col items-center justify-center fondo-cont-100 rounded-lg">
             
             <div className="md:p-0 p-5">
-             <img style={{aspectRatio:1/1}} className="md:w-32 w-24 object-cover rounded-full" src="public/media/perfil.webp" alt="" />
+             <img style={{aspectRatio:1/1}} className="md:w-32 w-24 object-cover rounded-full" src="/Portafolio/public/media/perfil.webp" alt="" />
              </div>
              <div className="flex gap-12 md:gap-5">
                <div className="relative bottom-7 hover:bg-zinc-600 p-1 rounded-full">
                 <a href="https://github.com/SantiFrau" target='_blank' rel="noreferrer">
-                  <img className="bg-zinc-600 w-8 rounded-full" src="/Porfolio/public/icons/github.webp" alt="icono de github" />
+                  <img className="bg-zinc-600 w-8 rounded-full" src="/Portafolio/public/icons/github.webp" alt="icono de github" />
                 </a>
                </div>
 
@@ -47,7 +47,7 @@ export default function Header(){
 
                 <div className="relative bottom-7 hover:bg-zinc-600 p-1 rounded-full">
                   <a href={ig} target='_blank' rel="noreferrer"> 
-                   <img className='w-8 rounded-full' src="/Porfolio/public/icons/ig.webp" alt="icono de instagram" />
+                   <img className='w-8 rounded-full' src="/Portafolio/public/icons/ig.webp" alt="icono de instagram" />
                   
                   </a>
               </div>
